@@ -1,0 +1,139 @@
+\documentclass[12pt,a4paper]{article}
+
+% ---------- PACKAGES ----------
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage{parskip}
+\usepackage{multicol}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{librebaskerville}
+
+\renewcommand{\familydefault}{\sfdefault}
+% \renewcommand{\familydefault}{\rmdefault}
+
+
+% ---------- PAGE SETUP ----------
+\geometry{top=1.5cm, bottom=1.5cm, left=1.6cm, right=1.6cm}
+\setlength{\parindent}{0pt}
+\setlist[itemize]{noitemsep, topsep=0pt, leftmargin=1.5em}
+
+% ---------- COLOR THEME ----------
+\definecolor{accent}{HTML}{03965b} % deep navy blue
+
+% ---------- SECTION STYLE ----------
+\titleformat{\section}{\large\bfseries\color{accent}}{}{0pt}{}
+\titleformat{\subsection}[runin]{\bfseries\color{accent}}{}{0pt}{}[ -- ]
+
+% ---------- LINK STYLE ----------
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,   % links stay black
+  linkcolor=black,
+  citecolor=black
+}
+
+% ---------- HEADER ----------
+\begin{document}
+\pagestyle{empty}
+% --- HEADER BLOCK ---
+\noindent
+\begin{minipage}[t]{0.65\textwidth}
+  {\LARGE \textbf{Koushik Ruidas}}\\
+  \textbf{Solution Architect -- Cloud \& Distributed Systems}\\[4pt]
+  Email: \href{mailto:koushikruidas@gmail.com}{koushikruidas@gmail.com}\\
+  Mobile: +91 9002662116\\
+\end{minipage}%
+\begin{minipage}[t]{0.35\textwidth}
+  \raggedleft
+  \begin{tabular}{@{}r l@{}}
+    \textbf{GitHub:} & \href{https://github.com/koushikruidas}{\textcolor{blue}{//koushikruidas}} \\
+    \textbf{LinkedIn:} & \href{https://www.linkedin.com/in/koushik-ruidas-1a73b1108/}{\textcolor{blue}{//in/koushik-ruidas}} \\
+  \end{tabular}
+\end{minipage}
+
+\vspace{6pt}
+\hrule
+\vspace{10pt}
+
+% ---------- EDUCATION ----------
+\section*{Education}
+\textbf{Indian Institute of Engineering Science and Technology, Shibpur}\\[2pt]
+\textit{Bachelor of Engineering (B.E.) in Information Technology} \hfill 2012 -- 2016\\
+\\
+\textbf{A Zone Boys High School, Durgapur}\\[2pt]
+\textit{West Bengal Board of Higher Secondary Examination (Class XII)} \hfill 2009 -- 2011\\
+\\
+\textbf{B Zone Boys High School, Durgapur}\\[2pt]
+\textit{West Bengal Board of Secondary Examination (Class X)} \hfill 2008 -- 2009
+
+
+% ---------- SKILLS ----------
+\section*{Skills}
+\textbf{Strengths:} Cloud Architecture, Microservices, Security, DevOps, Leadership\\
+\textbf{Proficient in:} Java, Spring Boot, Spring Cloud, Spring Security, Docker, AWS, Kafka, SQL
+
+% ---------- EXPERIENCE ----------
+\section*{Industry Experience}
+
+\textbf{Cognizant} — \textbf{\textit{Engineering Manager}}
+ \hfill Kolkata, India (2023 -- Present)\\
+Technologies: AWS, Microservices, Spring Boot, OAuth2, Docker
+\begin{itemize}
+  \item Leading migration of a mainframe system to a Java Spring Boot--Angular microservices platform (FIS client).
+  \item Designed scalable cloud-native architecture and CI/CD pipelines ensuring deployment automation.
+  \item Managing cross-functional backend, frontend, and BA teams to deliver enterprise-grade systems.
+  \item Driving client communication and stakeholder management through regular demos and reports.
+  \item Mentoring developers on distributed system design, performance tuning, and best practices.
+  % \item Contributed to project estimation, requirement analysis, and solution documentation.
+\end{itemize}
+
+\textbf{PwC} — \textbf{\textit{Senior Associate}} \hfill Kolkata, India (2021 -- 2022)\\
+Technologies: Spring Boot, JPA, Hibernate, Eureka, Hystrix, JWT
+\begin{itemize}
+  \item Led 6-member team to deliver MDM module for the SAMAST power scheduling system.
+  \item Built secure microservices ecosystem with API Gateway, JWT auth, and fault tolerance using Hystrix.
+  \item Designed and optimized meter data ingestion and energy analytics reporting modules.
+  \item Collaborated with business teams for requirement clarification and functional testing.
+\end{itemize}
+
+\textbf{Accenture} — \textbf{\textit{Senior Software Engineer}} \hfill Bangalore, India (2016 -- 2021)\\
+Technologies: Java, Spring Boot, AWS, Kafka, FIX Protocol
+\begin{itemize}
+  \item Developed FIX client integrating ICE exchange deals into Shell's record systems.
+  \item Built real-time deal streaming pipelines using Kafka for low-latency updates.
+  \item Supported multiple internal tools (MAST, MPS, CCM) for monitoring, message processing, and contract confirmation.
+\end{itemize}
+
+% ---------- PROJECTS ----------
+% \section*{Projects}
+% \textbf{LogPulse (Open Source)} — Real-time log analysis platform with Kafka and ELK.\\
+% \textbf{CloudDeployX} — Infrastructure-as-code deployment framework using Terraform + AWS Lambda.
+
+% % ---------- PUBLICATIONS ----------
+% \section*{Publications / Research}
+% System Call Interception for Serverless Isolation – ACM SIGCOMM Demos \& Posters 2020\\
+% Federated Adaptive Bitrate Live Streaming – ACM SIGCOMM NAI 2020
+
+% % ---------- CERTIFICATIONS ----------
+% \section*{Certifications}
+% AWS Certified Solutions Architect – Associate (2023)\\
+% Certified Kubernetes Administrator (2022)
+
+% % ---------- VOLUNTEERING ----------
+% \section*{Conferences / Volunteering}
+% COMSNETS 2020 Volunteer, MobiCom 2019 Volunteer, AIMLSystems 2021 Web Chair
+
+% ---------- FOOTER ----------
+% \vspace{8pt}
+% \hrule
+% \vspace{6pt}
+% \centering
+% Page \thepage\ of \pageref{LastPage}
+
+\end{document}
